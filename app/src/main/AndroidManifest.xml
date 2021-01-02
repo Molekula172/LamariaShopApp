@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shopapp.lamaria">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.shopapp.lamaria.activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivitySplash"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shopapp.lamaria.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityCart"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityProduct"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityProductDetail"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityCheckout"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityHistory"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityHelp"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityImageDetail"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivityNotificationDetail"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name="com.shopapp.lamaria.activities.ActivitySettings"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Pref" />
+
+        <!-- fcm -->
+        <service android:name="com.shopapp.lamaria.notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.shopapp.lamaria.notification.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.shopapp.lamaria.notification.NotificationExtenderExample"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
