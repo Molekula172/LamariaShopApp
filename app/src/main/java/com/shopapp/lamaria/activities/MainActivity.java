@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     int pager_number = 4;
     DBHelper dbhelper;
     private long exitTime = 0;
-
+// scscs
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
