@@ -63,6 +63,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
+
+
+
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:orientation="vertical"
@@ -73,6 +77,15 @@
 
 
                         </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="1 шт."
+                            android:textColor="@color/txt_price_color"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/product_price"

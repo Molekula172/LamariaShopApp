@@ -75,7 +75,7 @@ public class ActivityProductDetail extends AppCompatActivity {
     long product_id;
     TextView txt_product_name, txt_product_price;
     private String product_name, product_image, category_name, product_status, currency_code, product_description;
-    private double product_price;
+    private int product_price;
 
     WebView txt_product_description;
     ImageView img_product_image;
@@ -146,7 +146,7 @@ public class ActivityProductDetail extends AppCompatActivity {
         product_id = intent.getLongExtra("product_id", 0);
         product_name = intent.getStringExtra("title");
         product_image = intent.getStringExtra("image");
-        product_price = intent.getDoubleExtra("product_price", 0);
+        product_price = intent.getIntExtra("product_price", 0);
         product_description = intent.getStringExtra("product_description");
 
         product_status = intent.getStringExtra("product_status");

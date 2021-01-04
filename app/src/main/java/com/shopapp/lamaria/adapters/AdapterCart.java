@@ -27,14 +27,14 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView product_name;
-
+        TextView product_quantity;
         TextView product_price;
         ImageView product_image;
 
         public ViewHolder(View view) {
             super(view);
             product_name = view.findViewById(R.id.product_name);
-
+            product_quantity = view.findViewById(R.id.quantity);
             product_price = view.findViewById(R.id.product_price);
             product_image = view.findViewById(R.id.product_image);
         }
@@ -84,6 +84,8 @@ public class AdapterCart extends RecyclerView.Adapter<AdapterCart.ViewHolder> {
                 .centerCrop()
                 .transform(transformation)
                 .into(holder.product_image);
+
+        holder.product_quantity.setText(ActivityCart.product_quantity.get(position) + " шт.");
 
     }
 

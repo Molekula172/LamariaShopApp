@@ -78,7 +78,7 @@ public class ActivityNotificationDetail extends AppCompatActivity {
     long product_id;
     TextView txt_product_name, txt_product_price, txt_;
     private String product_name, product_image, category_name, product_status, currency_code, product_description;
-    private double product_price;
+    private int product_price;
 
     WebView txt_product_description;
     ImageView img_product_image;
@@ -197,7 +197,7 @@ public class ActivityNotificationDetail extends AppCompatActivity {
                     //resp_currency_code = response.getString("currency_code");
                     product_name = response.getString("product_name");
                     product_image = response.getString("product_image");
-                    product_price = response.getDouble("product_price");
+                    product_price = response.getInt("product_price");
                     product_description = response.getString("product_description");
 
                     product_status = response.getString("product_status");

@@ -6,7 +6,7 @@ public class Config {
     public static final String ADMIN_PANEL_URL = "http://www.lamaria.xyz/";
 
     //set false if you want price to be displayed in decimal
-    public static final boolean ENABLE_DECIMAL_ROUNDING = true;
+    public static final boolean ENABLE_DECIMAL_ROUNDING = false;
 
     //set true if you want to enable RTL (Right To Left) mode, e.g : Arabic Language
     public static final boolean ENABLE_RTL_MODE = false;

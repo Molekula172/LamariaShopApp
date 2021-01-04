@@ -324,9 +324,9 @@ public class ActivityCheckout extends AppCompatActivity {
             Order_price += Sub_total_price;
 
             if (Config.ENABLE_DECIMAL_ROUNDING) {
-                data_order_list += (Quantity + " " + Menu_name + " " + _Sub_total_price + " " + str_currency_code + ",\n");
+                data_order_list = (Quantity + " шт. " + Menu_name + " " + _Sub_total_price + " " + str_currency_code + ",\n");
             } else {
-                data_order_list += (Quantity + " " + Menu_name + " " + Sub_total_price + " " + str_currency_code + ",\n");
+                data_order_list = (Quantity + " шт. " + Menu_name + " " + Sub_total_price + " " + str_currency_code + ",\n");
             }
         }
 

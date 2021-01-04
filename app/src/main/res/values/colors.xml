@@ -2,12 +2,12 @@
 <resources>
 
     <!--app main color-->
-    <color name="colorPrimaryDark">#552731</color>
-    <color name="colorPrimary">#552731</color>
-    <color name="colorAccent">#552731</color>
+    <color name="colorPrimaryDark">#130000</color>
+    <color name="colorPrimary">#130000</color>
+    <color name="colorAccent">#130000</color>
 
     <!--other color-->
-    <color name="txt_price_color">#552731</color>
+    <color name="txt_price_color">#130000</color>
     <color name="ripple_color">#dfdfdf</color>
     <color name="green">#0ecf48</color>
     <color name="black">#000000</color>

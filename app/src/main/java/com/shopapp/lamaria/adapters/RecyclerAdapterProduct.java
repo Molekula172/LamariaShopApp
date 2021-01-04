@@ -29,7 +29,7 @@ public class RecyclerAdapterProduct extends RecyclerView.Adapter<RecyclerAdapter
     private ContactsAdapterListener listener;
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView product_name, product_price;
+        public TextView product_name, product_price, product_quantity;
         public ImageView product_image;
 
         public MyViewHolder(View view) {
@@ -37,6 +37,7 @@ public class RecyclerAdapterProduct extends RecyclerView.Adapter<RecyclerAdapter
             product_name = view.findViewById(R.id.product_name);
             product_price = view.findViewById(R.id.product_price);
             product_image = view.findViewById(R.id.category_image);
+            product_quantity = view.findViewById(R.id.quantity);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
