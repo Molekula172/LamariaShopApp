@@ -34,7 +34,7 @@ public class RecyclerAdapterCategory extends RecyclerView.Adapter<RecyclerAdapte
         public MyViewHolder(View view) {
             super(view);
             category_name = view.findViewById(R.id.category_name);
-            product_count = view.findViewById(R.id.product_count);
+            //product_count = view.findViewById(R.id.product_count);
             category_image = view.findViewById(R.id.category_image);
 
             view.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +65,7 @@ public class RecyclerAdapterCategory extends RecyclerView.Adapter<RecyclerAdapte
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         final Category category = categoryListFiltered.get(position);
         holder.category_name.setText(category.getCategory_name());
-        holder.product_count.setText(category.getProduct_count() + " " + context.getResources().getString(R.string.txt_items));
+        //holder.product_count.setText(category.getProduct_count() + " " + context.getResources().getString(R.string.txt_items));
 
         Transformation transformation = new RoundedTransformationBuilder()
                 .cornerRadiusDp(6)
