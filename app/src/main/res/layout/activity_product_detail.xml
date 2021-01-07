@@ -104,7 +104,8 @@
                         android:layout_marginRight="10dp"
                         android:text="Ayam Goreng"
                         android:textSize="22sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -131,9 +132,10 @@
                                 android:layout_marginLeft="3dp"
                                 android:layout_marginRight="3dp"
                                 android:text="10 USD"
-                                android:textColor="@color/txt_price_color"
+                                android:textColor="@color/black"
                                 android:textSize="18sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                />
 
                         </LinearLayout>
 

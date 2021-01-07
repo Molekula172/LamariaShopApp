@@ -89,13 +89,7 @@ public class FragmentProfile extends Fragment {
             }
         });
 
-        btn_privacy = view.findViewById(R.id.btn_privacy);
-        btn_privacy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.privacy_policy_url))));
-            }
-        });
+
 
         return view;
     }

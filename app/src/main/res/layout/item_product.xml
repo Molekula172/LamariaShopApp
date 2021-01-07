@@ -46,14 +46,15 @@
                 android:ellipsize="end"
                 android:maxLines="2"
                 android:text="Menu name"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/product_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$15 USD"
-                android:textColor="@color/txt_price_color"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 

@@ -57,7 +57,8 @@
                         android:layout_marginBottom="3dp"
                         android:textStyle="bold"
                         android:text="Product Name"
-                        android:textSize="16sp" />
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -85,7 +86,8 @@
                             android:layout_alignParentLeft="true"
                             android:text="1 шт."
                             android:textColor="@color/txt_price_color"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            />
 
                         <TextView
                             android:id="@+id/product_price"
