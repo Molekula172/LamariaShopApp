@@ -310,7 +310,7 @@ public class ActivityCheckout extends AppCompatActivity {
         double Total_price = 0;
         double tax = 0;
 
-        String data_order_list = null;
+        //String data_order_list = null;
         for (int i = 0; i < data.size(); i++) {
             ArrayList<Object> row = data.get(i);
 
@@ -324,9 +324,9 @@ public class ActivityCheckout extends AppCompatActivity {
             Order_price += Sub_total_price;
 
             if (Config.ENABLE_DECIMAL_ROUNDING) {
-                data_order_list = (Quantity + " шт. " + Menu_name + " " + _Sub_total_price + " " + str_currency_code + ",\n");
+                data_order_list += (Quantity + " шт. " + Menu_name + " " + _Sub_total_price + " " + str_currency_code + ",\n");
             } else {
-                data_order_list = (Quantity + " шт. " + Menu_name + " " + Sub_total_price + " " + str_currency_code + ",\n");
+                data_order_list += (Quantity + " шт. " + Menu_name + " " + Sub_total_price + " " + str_currency_code + ",\n");
             }
         }
 

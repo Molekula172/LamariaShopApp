@@ -15,7 +15,7 @@ repositories {
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     defaultConfig {
         applicationId 'com.shopapp.lamaria'
 
@@ -24,7 +24,7 @@ android {
                                 onesignal_google_project_number: "REMOTE"]
 
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 6
         versionName '3.0.1'
     }
@@ -41,10 +41,10 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
-    implementation 'com.android.support:cardview-v7:28.0.0'
-    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'com.android.support:cardview-v7:29.0.0'
+    implementation 'com.android.support:recyclerview-v7:29.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.balysv:material-ripple:1.0.2'
     implementation 'com.github.clans:fab:1.6.4'
